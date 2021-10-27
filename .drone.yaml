@@ -1,0 +1,10 @@
+---
+kind: pipeline
+type: kubernetes
+name: test-pipeline
+
+steps:
+  - name: test-step
+    image: alpine
+    commands:
+      - echo "test step"
